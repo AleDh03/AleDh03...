@@ -1,16 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+:root {
+  --primary-color: rgb(241, 239, 239);
+  --dark-color: rgb(39, 38, 38);
+  --a-color: rgb(162, 0, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   transition: 0.5s;
-  padding: 0;
-  margin: 0;
-  background-color: rgb(241, 239, 239);
+  background-color: var(--primary-color);
   font-family: "Poppins", sans-serif;
   color: rgb(57, 57, 57);
 }
 
+html {
+  font-size: 62.5%;
+}
+
+/********************************** HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .container__item--right {
+  margin-left: auto;
+} */
+
+.navbar {
+  display: flex;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+/************************* DARK LIGHT MODE */
 .wrapper {
-  height: 100vh;
+  /* height: 100vh; */
   /*This part is important for centering*/
   display: flex;
   align-items: center;
@@ -39,26 +87,28 @@ body {
   }
 }
 
+/* ************************ */
+
 h1 {
-  font-size: 70px;
+  font-size: 7rem;
   line-height: 70px;
   font-weight: 300;
   margin: 10px 0;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 4rem;
   line-height: 40px;
   font-weight: 300;
   margin: 50px 0 10px 0;
 }
 
 p {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 a {
-  color: rgb(162, 0, 255);
+  color: var(--a-color);
   font-size: 2rem;
   text-decoration: none;
   font-weight: 100;
@@ -68,17 +118,17 @@ a {
   color: rgb(246, 169, 241);
 }
 
-header {
+/* header {
   display: flex;
   justify-content: flex-end;
   padding: 30px;
-}
+} */
 
 .switch {
   width: 80px;
   height: 40px;
   border-radius: 20px;
-  background-color: rgb(39, 38, 38);
+  background-color: var(--dark-color);
   position: relative;
 }
 
@@ -96,7 +146,7 @@ header {
 }
 
 .dark {
-  background-color: rgb(57, 57, 57);
+  background-color: var(--dark-color);
   transition: 0.5s;
 }
 
@@ -125,6 +175,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px;
+  border: 3px solid green;
 }
 
 .main-text {
@@ -132,6 +183,7 @@ header {
   margin-bottom: 100px;
 }
 
+/* ************ */
 .square {
   width: 98%;
   margin: 1%;
@@ -278,6 +330,8 @@ footer {
   display: flex;
   justify-content: center;
   padding: 100px 30px;
+  width: 100%;
+  height: 100px;
   background-color: rgb(39, 39, 39);
 }
 
