@@ -7,8 +7,8 @@
 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  padding: 0;
 }
 
 body {
@@ -27,6 +27,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 /* .container__item--right {
@@ -174,8 +175,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
-  border: 3px solid green;
+  /* padding: 30px; */
 }
 
 .main-text {
